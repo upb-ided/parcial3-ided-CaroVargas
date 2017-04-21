@@ -1,7 +1,7 @@
 ﻿using System;
 
-namespace Parcial3_Base
-{
+
+
     public static class MatrixExtensions
     {
         public static void PrintMatrixValues(this int[,] matrix)
@@ -33,25 +33,35 @@ namespace Parcial3_Base
 
     internal class MatrixOperator
     {
-        /// <summary>
-        /// Suma las matrices parámetro.
-        /// Valor del punto: 1.0 / 5.0
-        /// </summary>
-        /// <param name="matrixA"></param>
-        /// <param name="matrixB"></param>
-        /// <returns>La matriz suma</returns>
-        public int[,] AddMatrix(int[,] matrixA, int[,] matrixB)
+    /// <summary>
+    /// Suma las matrices parámetro.
+    /// Valor del punto: 1.0 / 5.0
+    /// </summary>
+    /// <param name="matrixA"></param>
+    /// <param name="matrixB"></param>
+    /// <returns>La matriz suma</returns>
+    public int[,] AddMatrix(int[,] matrixA, int[,] matrixB)
+    {
+        int[,] result = null;
+
+        if (result != null)
         {
-            int[,] result = null;
-
-            if (result != null)
+            for (int i = 0; i < matrixA.GetLength(0); i++)
             {
-                result.PrintMatrixValues();
+                for (int j = 0; j < matrixB.GetLength(1); j++)
+                {
+                    result[i, j] = (matrixA.GetLength(0) + matrixB.GetLength(1));
+                    {
+                        result.PrintMatrixValues();
+                    }
+                }
             }
-
-            return result;
         }
 
+
+        return result;
+
+    }
         /// <summary>
         /// Multiplica una matriz por un escalar
         /// Valor del punto: 1.0/ 5.0
@@ -64,6 +74,15 @@ namespace Parcial3_Base
             int[,] result = null;
 
             if (result != null)
+               {
+                 for (int i = 0; i <matrix.GetLength(0); i++)
+                  {
+                    for (int j = 0; j <matrix.GetLength(1); j++)
+                       {
+                         result[i, j] = (matrix[i, j] * scalar);
+                       }
+                  }
+               }
             {
                 result.PrintMatrixValues();
             }
@@ -83,9 +102,24 @@ namespace Parcial3_Base
             int[,] result = null;
 
             if (result != null)
+             {
+               if ((matrixA.GetLenght(1)) == matrixB.GetLength(0)) && (matrixA.Getlenght(0) == matrixB.Getlenght(1)))
             {
-                result.PrintMatrixValues();
+                for (int i = 0; i < matrixA.GetLength(0); i++)
+                {
+                    for (int j = 0; j < matrixB.GetLength(1); j++)
+                    {
+
+                    }
+                }
             }
+               }
+
+
+
+                   {
+                     result.PrintMatrixValues();
+                   }
 
             return result;
         }
@@ -119,4 +153,3 @@ namespace Parcial3_Base
             return result;
         }
     }
-}
