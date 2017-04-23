@@ -1,0 +1,21 @@
+Punto 1(AddMatrix)
+* No se valida que las matrices sean operables (deben tener las mismas dimensiones)
+* La matriz 'result' nunca deja de ser nula antes que el código llegue a la operación.
+* El acercamiento a la operación es correcto; sin embargo, es incorrecto asignar 'result[i,j]' a 'matrixA.GetLength(0) + matrixB.GetLength(1)'. El resultado sería una matriz llena de números iguales. Debía asignarse a la suma de los elementos en [i,j] de A y B.
+Total: 0.3 / 1.0
+
+Punto 2(MultiplyMatrixByScalar)
+* La matriz nunca deja de ser nula antes que inicie el código.
+NOTA: Fallaste en lo único que me preguntaste antes de empezar el examen. Pilas.
+Total: 0.8 / 1.0
+
+Punto 3(MultiplyMatrices)
+* La validación de las matrices es correcta.
+* La iteración iba por buen camino, pero está incompleta y dentro no hay instrucción. El algoritmo no hace nada.
+Total: 0.2 / 2.0
+
+Punto 4(MixMatrix)
+* No presenta solución
+Total: 0.0 / 1.0
+
+Total evaluación: 1.3 / 5.0
